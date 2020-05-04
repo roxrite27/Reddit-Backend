@@ -1,5 +1,5 @@
-controller/CommonControllerTest.class
-controller/AdminControllerTest.class
-controller/CommentControllerTest.class
-controller/UserControllerTest.class
-controller/PostControllerTest.class
+controller\PostControllerTest.class
+controller\CommentControllerTest.class
+controller\CommonControllerTest.class
+controller\AdminControllerTest.class
+controller\UserControllerTest.class
