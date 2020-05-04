@@ -15,9 +15,43 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" path="$USER_HOME$/sdk/go1.14.2" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="setup" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1aN3Yu5mKSQ7LlwDuEnsybQq7Cz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reddit-api/src/test/java" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -31,6 +65,15 @@
       <recent name="$PROJECT_DIR$/reddit-service/src/main/java/com/upgrad/reddit/service/dao" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn dependency:tree" />
+      <command value="mvn clean" />
+      <command value="mvn clean install" />
+      <command value="mvn compile" />
+      <command value="mvn clean install -DskipTests" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -43,10 +86,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.controller in redditapi">
+  <component name="RunManager" selected="Application.RedditApiApplication">
     <configuration name="RedditApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.upgrad.reddit.api.RedditApiApplication" />
-      <module name="redditapi" />
+      <module name="reddit-api" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.upgrad.reddit.api.*" />
@@ -87,11 +130,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.RedditApiApplication" />
+      <item itemvalue="JUnit.controller in redditapi" />
+      <item itemvalue="JUnit.PostControllerTest.getAllPostsWithSignedOutUser" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RedditApiApplication" />
         <item itemvalue="JUnit.controller in redditapi" />
         <item itemvalue="JUnit.PostControllerTest.getAllPostsWithSignedOutUser" />
-        <item itemvalue="Application.RedditApiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +153,84 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586562274220</updated>
+      <workItem from="1588054942249" duration="1073000" />
+      <workItem from="1588119033335" duration="4205000" />
+      <workItem from="1588124792703" duration="8000" />
+      <workItem from="1588236079173" duration="4312000" />
+      <workItem from="1588313882380" duration="7023000" />
+      <workItem from="1588328303769" duration="1681000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="400" y="22" key="#RedditApiApplication" timestamp="1587710377688">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="400" y="22" key="#RedditApiApplication/0.0.1366.728@0.0.1366.728" timestamp="1587710377688" />
+    <state x="137" y="18" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588330498356">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588330498356" />
+    <state x="137" y="54" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.36.1366.732@0.36.1366.732" timestamp="1588238147471" />
+    <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587709411395">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1587709411395" />
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587558629079">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1587558629079" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1587615491913">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587615491913" />
+    <state width="1323" height="371" key="GridCell.Tab.0.bottom" timestamp="1588398711804">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="371" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588398711804" />
+    <state width="1320" height="363" key="GridCell.Tab.0.bottom/0.36.1366.732@0.36.1366.732" timestamp="1588329773747" />
+    <state width="1323" height="371" key="GridCell.Tab.0.center" timestamp="1588398711804">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="371" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588398711804" />
+    <state width="1320" height="363" key="GridCell.Tab.0.center/0.36.1366.732@0.36.1366.732" timestamp="1588329773744" />
+    <state width="1323" height="371" key="GridCell.Tab.0.left" timestamp="1588398711804">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="371" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588398711804" />
+    <state width="1320" height="363" key="GridCell.Tab.0.left/0.36.1366.732@0.36.1366.732" timestamp="1588329773743" />
+    <state width="1323" height="371" key="GridCell.Tab.0.right" timestamp="1588398711804">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="371" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588398711804" />
+    <state width="1320" height="363" key="GridCell.Tab.0.right/0.36.1366.732@0.36.1366.732" timestamp="1588329773746" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1588237684708">
+      <screen x="0" y="36" width="1366" height="732" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/0.36.1366.732@0.36.1366.732" timestamp="1588237684708" />
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1587618865547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1366.728@0.0.1366.728" timestamp="1587618865547" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1587558746061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587558746061" />
+    <state x="568" y="284" width="367" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588238090904">
+      <screen x="0" y="36" width="1366" height="732" />
+    </state>
+    <state x="568" y="284" width="367" height="265" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.36.1366.732@0.36.1366.732" timestamp="1588238090904" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1587708160052">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587708160052" />
+    <state x="339" y="199" width="672" height="681" key="run.anything.popup" timestamp="1588327792791">
+      <screen x="0" y="36" width="1366" height="732" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587709991894" />
+    <state x="339" y="199" width="672" height="681" key="run.anything.popup/0.36.1366.732@0.36.1366.732" timestamp="1588327792791" />
   </component>
 </project>

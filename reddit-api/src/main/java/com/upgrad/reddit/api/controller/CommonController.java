@@ -1,5 +1,6 @@
 package com.upgrad.reddit.api.controller;
 
+import com.upgrad.reddit.api.model.UserDeleteResponse;
 import com.upgrad.reddit.api.model.UserDetailsResponse;
 import com.upgrad.reddit.service.business.CommonBusinessService;
 import com.upgrad.reddit.service.entity.UserEntity;
@@ -11,6 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
 @RequestMapping("/")
 public class CommonController {
 
@@ -26,4 +28,21 @@ public class CommonController {
      * @throws UserNotFoundException
      * @throws AuthorizationFailedException
      */
+
+    @GetMapping("/fetchUserDetails")
+    public ResponseEntity<UserDetailsResponse> fetchUserDetails(@RequestBody String userId,@RequestHeader String authorization)
+        throws UserNotFoundException,AuthorizationFailedException {
+        UserEntity userEntity = commonBusinessService.getUser(userId,authorization);
+        UserDetailsResponse userDetailsResponse = new UserDetailsResponse()
+                .userName(userEntity.getUserName())
+                .aboutMe(userEntity.getAboutMe())
+                .contactNumber(userEntity.getContactNumber())
+                .country(userEntity.getCountry())
+                .dob(userEntity.getDob())
+                .emailAddress(userEntity.getEmail())
+                .firstName(userEntity.getFirstName())
+                .lastName(userEntity.getLastName());
+
+        return new ResponseEntity<UserDetailsResponse>(userDetailsResponse,HttpStatus.OK);
+    }
 }

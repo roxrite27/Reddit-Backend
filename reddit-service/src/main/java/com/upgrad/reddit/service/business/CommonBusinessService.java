@@ -25,6 +25,7 @@ public class CommonBusinessService {
     public UserEntity getUser(String uuid, String authorization) throws UserNotFoundException, AuthorizationFailedException {
 
         UserAuthEntity userAuthEntity = userDao.getUserAuthByAccesstoken(authorization);
-
+        UserEntity userEntity = userAuthEntity.getUser();
+        return userEntity;
     }
 }

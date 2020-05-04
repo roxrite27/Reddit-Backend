@@ -32,18 +32,20 @@ public class UserBusinessService {
         String[] encryptedText = passwordCryptographyProvider.encrypt(userEntity.getPassword());
         userEntity.setSalt(encryptedText[0]);
         userEntity.setPassword(encryptedText[1]);
-
+        userDao.createUser(userEntity);
+        return  userEntity;
     }
+
 
     /**
      * The method implements the business logic for signin endpoint.
      */
     @Transactional(propagation = Propagation.REQUIRED)
     public UserAuthEntity authenticate(String username, String password) throws AuthenticationFailedException {
-
-        UserEntity userEntity = userDao.getUserByUsername(username);
-
+        UserAuthEntity userAuthEntity = authenticate(username,password);
+        return  userAuthEntity;
     }
+
 
     /**
      * The method implements the business logic for signout endpoint.
@@ -52,5 +54,6 @@ public class UserBusinessService {
     public UserAuthEntity signout(String authorization) throws SignOutRestrictedException {
 
         UserAuthEntity userAuthEntity = userDao.getUserAuthByAccesstoken(authorization);
+        return userAuthEntity;
     }
 }

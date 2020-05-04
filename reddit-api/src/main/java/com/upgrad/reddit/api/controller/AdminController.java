@@ -6,15 +6,18 @@ import com.upgrad.reddit.service.entity.UserEntity;
 import com.upgrad.reddit.service.exception.AuthorizationFailedException;
 import com.upgrad.reddit.service.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
 @RequestMapping("/admin")
 public class AdminController {
 
-    @Autowired
+   
+ @Autowired
     private AdminBusinessService adminBusinessService;
 
     /**
@@ -26,4 +29,13 @@ public class AdminController {
      * @throws AuthorizationFailedException
      * @throws UserNotFoundException
      */
+
+    @PostMapping("/deleteUser")
+    public ResponseEntity<UserDeleteResponse> deleteUser(@RequestBody String userId, @RequestHeader String authorization) throws AuthorizationFailedException,UserNotFoundException {
+            
+      UserEntity userEntity = adminBusinessService.deleteUser(authorization,userId);
+
+            return new ResponseEntity<UserDeleteResponse>(new UserDeleteResponse().id(userId),HttpStatus.OK);
+
+    }
 }
